@@ -17,9 +17,9 @@ function set_reverse()
 {
     document.location="cgi-bin/set_reverse.cgi";
 }
-function clear01(event)
+function stop(event)
 {
-    document.location="cgi-bin/clear01.cgi";
+    document.location="cgi-bin/stop.cgi";
 }
 </script>
 </head>
@@ -29,14 +29,14 @@ function clear01(event)
 <div style="text-align:center">
   <h1>Raspberry Pi GPIO</h1>
  
-  <img src="/arrow_forward.jpg" id="f" onpointerdown="set_forward()" onpointerup="clear01()">
+  <img src="/arrow_forward.jpg" id="f" onpointerdown="set_forward()" onpointerup="stop()">
   <br>
-  <img src="/arrow_left.jpg" id="l" onpointerdown="set_left()" onpointerup="clear01()">
-  <img src="/arrow_right.jpg" id="r" onpointerdown="set_right()" onpointerup="clear01()">
+  <img src="/arrow_left.jpg" id="l" onpointerdown="set_left()" onpointerup="stop()">
+  <img src="/arrow_right.jpg" id="r" onpointerdown="set_right()" onpointerup="stop()">
   <br>
-  <img src="/arrow_reverse.jpg" id="r" onpointerdown="set_reverse()" onpointerup="clear01()">
+  <img src="/arrow_reverse.jpg" id="r" onpointerdown="set_reverse()" onpointerup="stop()">
   <br>
-  <img src="/stop.jpg" id="s" onpointerdown="clear01()" onpointerup="clear01()">
+  <img src="/stop.jpg" id="s" onpointerdown="stop()" onpointerup="stop()">
   </div>
   </body>
 </html>
